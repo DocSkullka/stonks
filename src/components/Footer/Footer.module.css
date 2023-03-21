@@ -1,0 +1,57 @@
+/* Footer common*/
+
+.footerH3{
+    font-family: 'Inter';
+    font-size: calc(6px + (14 - 6) * ((100vw - 320px) / (2000 - 320)));
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #656566;
+}
+
+.footerP{
+    font-family: 'Inter';
+    font-size: calc(6px + (14 - 6) * ((100vw - 320px) / (2000 - 320)));
+    line-height: 19px;  
+    color: #E4E5EA;
+}
+
+.footerP:hover {
+    cursor: pointer;
+}
+
+/* ///////////////// */
+
+/* Menu */
+
+.menuText{
+    display: flex;
+    gap: calc(8px + (52 - 8) * ((100vw - 320px) / (2000 - 320)));
+}
+
+/* ////////////// */
+
+/* FooterContacts */
+
+.footerContact{
+    font-family: 'Inter';
+    font-size: calc(7px + (16 - 7) * ((100vw - 320px) / (2000 - 320)));
+    line-height: 19px;
+    text-align: right;
+    color: #E4E5EA
+}
+
+.footerImg{
+    display: flex;
+    justify-content: flex-end;
+    gap: calc(3px + (14 - 3) * ((100vw - 320px) / (2000 - 320)));
+}
+
+.footerImg img:hover{
+    cursor: pointer;
+}
+
+#contact{
+    text-align: right;
+}
+/* //////////////// */

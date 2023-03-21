@@ -1,0 +1,23 @@
+.wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 calc(2px + (10 - 2) * ((100vw - 320px) / (1270 - 320)));
+}
+
+Header, Footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+Main{
+    flex: auto;
+    margin-top: 150px;
+}
+
+

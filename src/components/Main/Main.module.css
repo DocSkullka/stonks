@@ -1,0 +1,282 @@
+/* BackgroundLights */
+.redLight {
+    position: absolute;
+    width: calc(100px + (311 - 100) * ((100vw - 320px) / (2000 - 320)));
+    height: calc(100px + (311 - 100) * ((100vw - 320px) / (2000 - 320)));
+    left: calc(-30px + (-102 + -32) * ((100vw - 320px) / (2000 - 320)));
+    top: calc(86px + (251 - 86) * ((100vw - 320px) / (2000 - 320)));
+
+    background: #961A1A;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.redBall{
+    position: absolute;
+    width: calc(26px + (83 - 26) * ((100vw - 320px) / (2000 - 320)));
+    height: calc(26px + (83 - 26) * ((100vw - 320px) / (2000 - 320)));
+    left: calc(187px + (519 - 187) * ((100vw - 320px) / (2000 - 320)));
+    top: calc(26px + (83 - 26) * ((100vw - 320px) / (2000 - 320)));
+
+    border-radius: 50%;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.redBallSecond{
+    position: absolute;
+    width: calc(13px + (28 - 13) * ((100vw - 320px) / (2000 - 320)));
+    height: calc(13px + (28 - 13) * ((100vw - 320px) / (2000 - 320)));
+    left: calc(290px + (851 - 290) * ((100vw - 320px) / (2000 - 320)));
+    top: calc(179px + (547 - 179) * ((100vw - 320px) / (2000 - 320)));
+
+    border-radius: 50%;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(2.5px);
+    backdrop-filter: blur(2px);
+}
+
+.purpleLight{
+    position: absolute;
+    width: calc(105px + (259 - 105) * ((100vw - 320px) / (2000 - 320)));
+    height: calc(105px + (259 - 105) * ((100vw - 320px) / (2000 - 320)));
+    left: calc(230px + (602 - 230) * ((100vw - 320px) / (2000 - 320)));
+    top: calc(-70px + (-154 + -70) * ((100vw - 320px) / (2000 - 320)));
+
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.purpleBall {
+    position: absolute;
+    width: calc(20px + (60 - 20) * ((100vw - 320px) / (2000 - 320)));
+    height: calc(20px + (60 - 20) * ((100vw - 320px) / (2000 - 320)));
+    left: calc(298px + (868 - 298) * ((100vw - 320px) / (2000 - 320))); 
+    top: -2px;
+
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+}
+
+.redLight , .purpleBall, .purpleLight, .redBallSecond, .redBall{
+    z-index: -1;
+}
+
+/* /////////////////////// */
+
+/* Slogan */
+
+.slogan{
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan h1 {
+    font-family: 'Inter';
+    font-size: calc(20px + (48 - 20) * ((100vw - 320px) / (2000 - 320)));
+    color: #E4E5EA;
+    margin-bottom: 0;
+}
+
+.cyberneticallyGradient{
+    font-family: 'Inter';
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.slogan p{
+    font-family: 'Montserrat';
+    font-size: calc(6px + (16 - 6) * ((100vw - 320px) / (2000 - 320)));
+    color: #E4E5EA;
+}
+
+/* ////////////////////////////// */
+
+
+/* StocTable */
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.table {
+    width: calc(100px + (800 - 100) * ((100vw - 320px) / (2000 - 320)));
+    font-size: calc(6px + (14 - 6) * ((100vw - 320px) / (2000 - 320)));
+    margin: calc(2px + (10 - 2) * ((100vw - 320px) / (2000 - 320)));
+    font-family: 'Montserrat';
+    text-align: left;
+    border-collapse: collapse;
+    background: #252F48;
+}
+
+.table th {
+    color: #EDB749;
+    border-bottom: 1px solid #37B5A5;
+    padding: calc(2px + (12 - 2) * ((100vw - 320px) / (2000 - 320))) calc(3px + (17 - 3) * ((100vw - 320px) / (2000 - 320)));
+  }
+  .table td {
+    color: #CAD4D6;
+    border-bottom: 1px solid #37B5A5;
+    border-right:1px solid #37B5A5;
+    padding: calc(2px + (12 - 2) * ((100vw - 320px) / (2000 - 320))) calc(3px + (17 - 3) * ((100vw - 320px) / (2000 - 320)));
+  }
+  .table tr:last-child td {
+    border-bottom: none;
+  }
+  .table td:last-child {
+    border-right: none;
+  }
+  .table tr:hover td {
+    text-decoration: underline;
+  }
+
+/* //////////////////// */
+
+/* Buttons */
+
+.btns  {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns button{
+    margin-top: calc(5px + (20 - 5) * ((100vw - 320px) / (2000 - 320)));
+    padding: calc(5px + (21 - 5) * ((100vw - 320px) / (2000 - 320))) calc(15px + (80 - 15) * ((100vw - 320px) / (2000 - 320)));
+    font-size: calc(6px + (16 - 6) * ((100vw - 320px) / (2000 - 320)));
+    background: #4077F3;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Inter';
+    line-height: 19px;
+    text-align: center;
+    color: #E4E5EA;
+    cursor: pointer;
+}
+
+.btns button:hover{
+    background: -webkit-linear-gradient(top, #ddd, #111);
+	background: -moz-linear-gradient(top, #ddd, #111);
+	background: -o-linear-gradient(top, #ddd, #111);
+	background: -ms-linear-gradient(top, #ddd, #111);
+	background: linear-gradient(top, #ddd, #111);
+
+	box-shadow: 0 0 15px #000, inset 0 1px 8px -2px #fff;
+	-moz-box-shadow: 0 0 15px #000, inset 0 1px 8px -2px #fff;
+	-webkit-box-shadow: 0 0 15px #000, inset 0 1px 8px -2px #fff;
+}
+
+/* ////////////////////////// */
+
+/* Input */
+
+
+
+.inputBackground {
+    position: fixed;
+    background: #111;
+    opacity: 0.9;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-items:center;
+    justify-content:center;
+}
+
+.inputContainer {
+    position: fixed;
+    left:50%;
+    top:20%;
+    transform:translate(-50%,-50%);
+}
+
+.input{
+    padding: calc(3px + (10 - 3) * ((100vw - 320px) / (2000 - 320)));
+    width: calc(200px + (1000 - 200) * ((100vw - 320px) / (2000 - 320)));
+    height: 10px;
+    border: 0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    outline: none;
+}
+
+.input::placeholder {
+    opacity: 0.6;
+}
+
+
+.promptContainer {
+    width: 100%;
+    position: absolute;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.promptContainer p{
+    cursor: pointer;
+    margin-left: calc(3px + (10 - 3) * ((100vw - 320px) / (2000 - 320)));
+    margin-top: 0px;
+}
+
+.errorContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.errorContainer h1{
+    font-size:  calc(10px + (32 - 10) * ((100vw - 320px) / (2000 - 320)));
+    color: #fff;
+}
+
+.inputText {
+    display: flex;
+    justify-content: center;
+}
+
+.inputText h1{
+    color: #fff;
+    font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (2000 - 320)));
+    margin-top: 0;
+}
+
+
+.tableInput {
+    font-family: 'Montserrat';
+    width: 100%;
+    font-size: calc(6px + (14 - 6) * ((100vw - 320px) / (2000 - 320)));
+    margin-top: calc(2px + (10 - 2) * ((100vw - 320px) / (2000 - 320)));
+    text-align: left;
+    border-collapse: collapse;
+    background: #252F48;
+}
+
+.tableInput th {
+    color: #EDB749;
+    border-bottom: 1px solid #37B5A5;
+    padding: calc(2px + (12 - 2) * ((100vw - 320px) / (2000 - 320))) calc(3px + (17 - 3) * ((100vw - 320px) / (2000 - 320)));
+  }
+  .tableInput td {
+    color: #CAD4D6;
+    border-bottom: 1px solid #37B5A5;
+    border-right:1px solid #37B5A5;
+    padding: calc(2px + (7 - 2) * ((100vw - 320px) / (2000 - 320))) calc(3px + (17 - 3) * ((100vw - 320px) / (2000 - 320)));
+  }
+  .tableInput tr:last-child td {
+    border-bottom: none;
+  }
+  .tableInput td:last-child {
+    border-right: none;
+  }
+  .tableInput tr:hover td {
+    text-decoration: underline;
+  }
+
+/* //////////////// */
