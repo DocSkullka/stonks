@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/stonks/static/css/main.47c8291a.css",
+    "main.js": "/stonks/static/js/main.4b9114a1.js",
+    "static/media/viber.svg": "/stonks/static/media/viber.c793f1ae1fe1ca9d2d3281cbeb9d77a8.svg",
+    "static/media/phone.svg": "/stonks/static/media/phone.68cafd33e320a578baba5f4f12d7ef5a.svg",
+    "index.html": "/stonks/index.html",
+    "static/media/telegram.svg": "/stonks/static/media/telegram.bbdfd49ca3491cd8b259261acb41fd7f.svg",
+    "main.47c8291a.css.map": "/stonks/static/css/main.47c8291a.css.map",
+    "main.4b9114a1.js.map": "/stonks/static/js/main.4b9114a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47c8291a.css",
+    "static/js/main.4b9114a1.js"
+  ]
+}
