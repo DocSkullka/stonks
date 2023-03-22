@@ -9,12 +9,6 @@ export const PromptData = () => {
     const data = useSelector((state) => { return state.user.data })
     const inputRefState = useSelector((state) => { return state.user.inputRefState})
 
-    document.addEventListener('click', (e)=>{
-        if(e.target !== prompt.current){
-            dispatch(setPromptFlag(false))
-        }
-    })
-
     const handlerClick = (e) => {
         dispatch(setSymbol(e.target.textContent.toLowerCase()))
         dispatch(setInputRefState(e.target.textContent))
